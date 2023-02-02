@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Котик</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Тестовое задание" />
+	<meta name="keywords" content="funbox" />
+	<link type="text/css" rel="stylesheet" href="main.css" />
+</head>
+<body>
+<div id="context">
+	<div id="header">Ты сегодня покормил кота?</div>
+	<div id="content">
+		<div id="foie_gras">
+			<div id="card_fg" onmouseenter="enter('fg')" onmouseleave="leave('fg')">
+				<div id="back_fg" class="selected_back">
+					<div id="border_fg" class="selected"></div>
+					<div id="photo_fg"></div>
+				</div>
+				<div id="title1_fg">Сказочное заморское яство</div>
+				<div id="title2_fg">Нямушка</div>
+				<div id="taste_fg">с фуа-гра</div>
+				<div id="amount_fg">10 порций<br>мышь в подарок</div>
+				<div id="photo_disabled_fg"></div>
+				<div id="border_disabled_fg"></div>
+				<div id="oval_fg" class="selected"></div>
+				<div id="weight_fg">0,5</div>
+				<div id="kg_fg">кг</div>
+				<div id="description_fg">Печень утки разварная с артишоками.</div>
+			</div>
+		</div>
+		<div id="fish">
+			<div id="card_fh" onmouseenter="enter('fh')" onmouseleave="leave('fh')">
+				<div id="back_fh">
+					<div id="border_fh"></div>
+					<div id="photo_fh"></div>
+				</div>
+				<div id="title1_fh">Сказочное заморское яство</div>
+				<div id="title2_fh">Нямушка</div>
+				<div id="taste_fh">с рыбой</div>
+				<div id="amount_fh">40 порций<br>2 мыши в подарок</div>
+				<div id="photo_disabled_fh"></div>
+				<div id="border_disabled_fh"></div>
+				<div id="oval_fh"></div>
+				<div id="weight_fh">2</div>
+				<div id="kg_fh">кг</div>
+				<div id="description_fh">Чего сидишь? Порадуй котэ, <span id="buy_fh">купи</span></div>
+			</div>
+		</div>
+		<div id="chicken">
+			<div id="card_ch" class="disabled" onmouseenter="enter('ch')" onmouseleave="leave('ch')">
+				<div id="back_ch">
+					<div id="border_ch"></div>
+					<div id="photo_ch"></div>
+				</div>
+				<div id="title1_ch" class="disabled">Сказочное заморское яство</div>
+				<div id="title2_ch" class="disabled">Нямушка</div>
+				<div id="taste_ch" class="disabled">с курой</div>
+				<div id="amount_ch" class="disabled">100 порций<br>5 мышей в подарок заказчик доволен</div>
+				<div id="photo_disabled_ch" class="photo_disabled"></div>
+				<div id="border_disabled_ch" class="border_disabled"></div>
+				<div id="oval_ch" class="oval_disabled"></div>
+				<div id="weight_ch">5</div>
+				<div id="kg_ch">кг</div>
+				<div id="description_ch" class="description_disabled">Печалька, с курой закончился.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
