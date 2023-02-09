@@ -1,0 +1,223 @@
+@font-face {
+	font-family: 'Exo2.0';
+	src: url("Exo2.0-Thin.otf") format("opentype"), url("Exo2.0-Thin.ttf") format("truetype"), url("Exo2.0-Thin.woff") format("woff");
+}
+html {
+    width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	background-image: url(Pattern.jpg);
+    background-size: 100%;
+}
+body {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(180deg,  rgba(0, 0, 0, 0.5) 0%,  rgba(0, 0, 0, 0.00005) 49.88%, rgba(0, 0, 0, 0.5) 100%);
+	background: -ms-linear-gradient(270deg,  rgba(0, 0, 0, 0.5) 0%,  rgba(0, 0, 0, 0.00005) 49.88%, rgba(0, 0, 0, 0.5) 100%);
+	background-size: 100%;
+}
+#context {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+	display: flex;
+}
+.container {
+	width: 1280px;
+	height: 680px;
+	margin: auto;
+}
+.header {
+	font-family: Exo2.0-Thin;
+	position: relative;
+	width: 100%;
+	font-family: 'Exo2.0';
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 1px 1px #000000;
+	margin-top: 36px;
+}
+.content {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 24px 2%;
+}
+#foie_gras, #fish, #chicken {
+	position: relative;
+	width: 320px;
+	height: 509px;
+	margin: 0 10px 55px;
+}
+.card {
+	width: 100%;
+	height: 480px;
+	border-radius: 14px;
+	background: linear-gradient(135deg, transparent 32px, #F2F2F2 0) top left;
+	color: #666666;
+}
+.photo {
+	width: 100%;
+	height: 480px;
+	border-radius: 0 14px;
+	background: url(Photo.png) no-repeat;
+	background-position: bottom;
+}
+.title1 {
+	position: absolute;
+	height: 19px;
+	left: 15.94%;
+	top: calc(50% - 19px/2 - 224px);
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}
+.title2 {
+	position: absolute;
+	height: 56px;
+	left: 15%;
+	right: 19.06%;
+	top: calc(50% - 56px/2 - 181.5px);
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56px;
+	color: #000000;
+}
+.taste {
+	position: absolute;
+	height: 28px;
+	left: 15.94%;
+	right: 49.06%;
+	top: calc(50% - 28px/2 - 140.5px);
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+}
+.amount {
+	position: absolute;
+	height: 32px;
+	left: 15.94%;
+	right: 40%;
+	top: calc(50% - 32px/2 - 95.5px);
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+}
+.border {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 480px;
+}
+.weight {
+	position: absolute;
+	height: 22px;
+	left: 73.28%;
+	right: 7.97%;
+	top: calc(50% - 22px/2 + 160.5px);
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 22px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.kg {
+	position: absolute;
+	height: 22px;
+	left: 79.53%;
+	right: 14.22%;
+	top: calc(50% - 52px/2 + 205px);
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 22px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.description {
+	position: absolute;
+	height: 15px;
+	width: 102%;
+	top: calc(50% - 15px/2 + 247px);
+	font-family: 'Trebuchet MS';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	text-align: center;
+	color: #FFFFFF;
+	pointer-events: none;
+}
+.buy {
+	font-weight: 700;
+	color: #1698D9;
+	border-bottom: 1px dashed #1698D9;
+	pointer-events: auto;
+}
+.card:hover  {
+	cursor: pointer;
+}
+.card:hover circle {
+	fill: #2EA8E6;
+}
+.card:hover g {
+	stroke: #2EA8E6;
+}
+.selected circle {
+	fill: #D91667;
+}
+.selected g {
+	stroke: #D91667;
+}
+.selected:hover circle {
+	fill: #E62E7A;
+}
+.selected:hover g {
+	stroke: #E62E7A;
+}
+.disabled {
+	color: #B3B3B3;
+	cursor: default;
+	pointer-events: none;
+}
+.disabled circle {
+	fill: #B3B3B3;
+}
+.disabled g {
+	stroke: #B3B3B3;
+}
+.disabled rect {
+	fill: rgba(255, 255, 255, 0.5);
+}
+.disabled .title2 {
+	color: #B3B3B3;
+}
+.disabled .taste {
+	color: #B3B3B3;
+}
+.disabled .description {
+	color: #FFFF66;
+}

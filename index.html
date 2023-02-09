@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Котик</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Тестовое задание" />
+	<meta name="keywords" content="funbox" />
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="context">
+	<div class="container">
+		<div class="header">Ты сегодня покормил кота?</div>
+		<div class="content">
+			<div id="foie_gras" onmouseenter="enter('#foie_gras')" onmouseleave="leave('#foie_gras')">
+				<div class="card">
+					<div class="photo"></div>
+					<div class="title1">Сказочное заморское яство</div>
+					<div class="title2">Нямушка</div>
+					<div class="taste">с фуа-гра</div>
+					<div class="amount">
+						<div>10 порций</div>
+						<div>мышь в подарок</div>
+					</div>
+					<div class="border">
+						<svg version="1.1" width="320" height="480">
+							<defs>
+								<clipPath id="cp">
+									<polygon points="45,0 320,0 320,480 0,480 0,45"/>
+								</clipPath>
+							</defs>
+							<g stroke="#1698D9" stroke-width="4">
+								<rect x="2" y="2" rx="12" clip-path="url(#cp)" width="316" height="476" fill="transparent"/>
+								<line x1="2" y1="45" x2="45" y2="2"/>
+							</g>
+							<circle cx="264" cy="424" r="40" stroke-width="3" fill="#1698D9" />
+						</svg>
+					</div>
+					<div class="weight">0,5</div>
+					<div class="kg">кг</div>
+					<div class="description">Чего сидишь? Порадуй котэ, <span class="buy">купи</span></div>
+				</div>
+			</div>
+			<div id="fish" onmouseenter="enter('#fish')" onmouseleave="leave('#fish')">
+				<div class="card selected">
+					<div class="photo"></div>
+					<div class="title1">Сказочное заморское яство</div>
+					<div class="title2">Нямушка</div>
+					<div class="taste">с рыбой</div>
+					<div class="amount">
+						<div>40 порций</div>
+						<div>2 мыши в подарок</div>
+					</div>
+					<div class="border">
+						<svg version="1.1" width="320" height="480">
+							<defs>
+								<clipPath id="cp">
+									<polygon points="45,0 320,0 320,480 0,480 0,45"/>
+								</clipPath>
+							</defs>
+							<g stroke="#1698D9" stroke-width="4">
+								<rect x="2" y="2" rx="12" clip-path="url(#cp)" width="316" height="476" fill="transparent"/>
+								<line x1="2" y1="45" x2="45" y2="2"/>
+							</g>
+							<circle cx="264" cy="424" r="40" stroke-width="3" fill="#1698D9" />
+						</svg>
+					</div>
+					<div class="weight">2</div>
+					<div class="kg">кг</div>
+					<div class="description">Головы щучьи с чесноком да свежайшая сёмгушка.</div>
+				</div>
+			</div>
+			<div id="chicken" onmouseenter="enter('#chicken')" onmouseleave="leave('#chicken')">
+				<div class="card disabled">
+					<div class="photo"></div>
+					<div class="title1">Сказочное заморское яство</div>
+					<div class="title2">Нямушка</div>
+					<div class="taste">с курой</div>
+					<div class="amount">
+						<div>100 порций</div>
+						<div>5 мышей в подарок заказчик доволен</div>
+					</div>
+					<div class="border">
+						<svg version="1.1" width="320" height="480">
+							<defs>
+								<clipPath id="cp">
+									<polygon points="45,0 320,0 320,480 0,480 0,45"/>
+								</clipPath>
+							</defs>
+							<g stroke="#1698D9" stroke-width="4">
+								<rect x="2" y="2" rx="12" clip-path="url(#cp)" width="316" height="476" fill="transparent"/>
+								<line x1="2" y1="45" x2="45" y2="2"/>
+							</g>
+							<circle cx="264" cy="424" r="40" stroke-width="3" fill="#1698D9" />
+						</svg>
+					</div>
+					<div class="weight">5</div>
+					<div class="kg">кг</div>
+					<div class="description">Печалька, с курой закончился.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
