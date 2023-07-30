@@ -3,13 +3,24 @@
 	src: url("Exo2.0-Thin.otf") format("opentype"), url("Exo2.0-Thin.ttf") format("truetype"), url("Exo2.0-Thin.woff") format("woff");
 }
 html {
-    width: 100vw;
+    	width: 100vw;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-	position: fixed;
+	/*position: fixed;
 	background-image: url(Pattern.jpg);
+    	background-size: 100%;*/
+}
+body:before {
+    content: '';
+    background-image: url("Pattern.jpg");
     background-size: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -60px;
+    z-index: -1;
 }
 body {
 	position: fixed;
