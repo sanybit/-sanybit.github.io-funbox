@@ -14,7 +14,7 @@ html {
 body:before {
 	content: '';
 	background-image: url("Pattern.jpg");
-	background-size: 100%;
+	background-size: cover;
 	position: fixed;
 	left: 0;
 	right: 0;
