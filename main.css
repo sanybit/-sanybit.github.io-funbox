@@ -13,7 +13,7 @@ html {
 }
 body:before {
 	content: '';
-	background-image: url("Pattern.jpg");
+	background: url("Pattern.jpg") no-repeat;
 	background-size: cover;
 	position: fixed;
 	left: 0;
