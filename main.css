@@ -12,15 +12,15 @@ html {
     	background-size: 100%;*/
 }
 body:before {
-    content: '';
-    background-image: url("Pattern.jpg");
-    background-size: 100%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: -60px;
-    z-index: -1;
+	content: '';
+	background-image: url("Pattern.jpg");
+	background-size: 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: -60px;
+	z-index: -1;
 }
 body {
 	position: fixed;
